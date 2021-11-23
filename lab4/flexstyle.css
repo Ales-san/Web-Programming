@@ -73,6 +73,19 @@ body {
     /*border: 5px solid #efff8d;*/
 }
 
+.main-header__ref {
+    font-style: normal;
+    text-decoration: none;
+    color: #01280c;
+}
+
+.main-header__ref:hover {
+    font-style: normal;
+    text-decoration: none;
+    color: forestgreen;
+    /*background-color: #DEEDE1;*/
+}
+
 .aside {
     flex: 6;
     font-weight: lighter;
@@ -126,6 +139,8 @@ body {
 
 .section-item {
     display: flex;
+    width: 30%;
+    min-width: 200px;
     flex-direction: column;
     margin: 15px;
     justify-content: space-around;
