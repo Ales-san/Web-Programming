@@ -7,7 +7,7 @@
           content="Мастерская &quot;Суккуленты&quot; - мы представляем вам украшения ручной работы из серебра, полимерной глины и натуральных камней, а также различные декоративные элементы.">
     <title>Мастерская "Суккуленты"</title>
     <link href="./lab4/flexstyle.css" rel="stylesheet">
-
+    <script src="./lab4/animatedAside.js"></script>
 </head>
 <body>
 
@@ -18,20 +18,26 @@
         <h1 class="main-header">
             Мастерская "Суккуленты"
         </h1>
-        <aside class="aside">
+        <aside class="aside" id="stock">
             Розыгрыш фигурки за лучший чертеж в<code> Autocad </code>! Подробная информация здесь: www.foo.bar
         </aside>
     </div>
     <nav class="header__navigation">
-        <a class="navigation__button" href="./lab4/orders.html">Заказы</a>
-        <a href="./lab4/contacts.html" class="navigation__button">Контакты</a>
-        <a href="./lab4/ornamentation.html" class="navigation__button">Украшения</a>
-        <a href="./lab4/decor.html" class="navigation__button">Декор</a>
+        <a href="./lab4/orders.html" class="navigation__button" id="orders">Заказы</a>
+        <a href="./lab4/contacts.html" class="navigation__button" id="contacts">Контакты</a>
+        <a href="./lab4/ornamentation.html" class="navigation__button" id="ornamentation">Украшения</a>
+        <a href="./lab4/decor.html" class="navigation__button" id="decor">Декор</a>
     </nav>
-
 </header>
 
 <main class="main-content">
+    <!--<script>
+        for (let i = 0; i < 10000; i++) {
+            let a = i + 2;
+            console.log(a);
+        }
+        alert("hi");
+    </script>-->
     <section class="main-sect">
         <h2 class="main-sect__header">
             Изготовление украшений и декора на заказ
@@ -87,7 +93,6 @@
             Именно поэтому в нашей команде шутят, что формула успеха - это <q>команда + время = успех<sup>2</sup></q>
         </p>
     </article>
-    <script src="./lab4/LoadTimeScript.js"></script>
 </main>
 <footer class="footer">
     <pre class="footer-sect__logo-name">
@@ -101,6 +106,8 @@
             </pre>
     Наша почта: lll@info.ru <br>
     <time datetime="2021-10-25">2021</time>
+    <script src="./lab4/LoadTimeScript.js"></script>
+    <p id="timer"></p>
 </footer>
 
 </body>
