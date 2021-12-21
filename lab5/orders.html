@@ -6,36 +6,37 @@
     <meta name="description"
           content="Мастерская &quot;Суккуленты&quot; - мы представляем вам украшения ручной работы из серебра, полимерной глины и натуральных камней, а также различные декоративные элементы.">
     <title>Мастерская "Суккуленты"</title>
-    <link href="../lab4/flexstyle.css" rel="stylesheet">
-    <!--script src="../lab4/animatedAside.js"></script-->
+    <link href="flexstyle.css" rel="stylesheet">
 </head>
 <body>
 
 <header class="header">
-
     <div class="header-container">
         <img class="header__logo" alt="icon" src="../resources/icon2.png">
         <h1 class="main-header">
-            Мастерская "Суккуленты"
+            <a class="main-header__ref" href="../index.html"> Мастерская "Суккуленты" </a>
         </h1>
-        <aside class="aside" id="stock">
+        <aside class="aside">
             Розыгрыш фигурки за лучший чертеж в<code> Autocad </code>! Подробная информация здесь: www.foo.bar
         </aside>
     </div>
     <nav class="header__navigation">
-        <a href="../lab4/orders.html" class="navigation__button" id="orders">Заказы</a>
-        <a href="../lab4/contacts.html" class="navigation__button" id="contacts">Контакты</a>
-        <a href="../lab4/ornamentation.html" class="navigation__button" id="ornamentation">Украшения</a>
-        <a href="../lab4/decor.html" class="navigation__button" id="decor">Декор</a>
+        <a href="orders.html" class="navigation__button" id="orders">Заказы</a>
+        <a href="contacts.html" class="navigation__button" id="contacts">Контакты</a>
+        <a href="ornamentation.html" class="navigation__button" id="ornamentation">Украшения</a>
+        <a href="decor.html" class="navigation__button" id="decor">Декор</a>
     </nav>
+
 </header>
+<script src="activeNavigationSection.js"> </script>
 
 <main class="main-content">
     <section class="main-sect">
         <h2 class="main-sect__header">
             Изготовление украшений и декора на заказ
         </h2>
-        <p class="main-sect__paragraph"><b>Наша мастерская "Суккуленты"</b> занимается изготовлением украшений и
+        <p class="main-sect__paragraph">
+            <b>Наша мастерская "Суккуленты"</b> занимается изготовлением украшений и
             декоративных элементов на заказ. </p>
         <ul class="main-sect__list">
             В том числе, мы изготавливаем:
@@ -43,28 +44,26 @@
             <li class="main-sect__list-item">Кольца и медальоны из серебра с надписями</li>
             <li class="main-sect__list-item">Изделия из эпоксидной смолы</li>
             <li class="main-sect__list-item">Изделия из фанеры, акрила или пластика с гравировкой</li>
-            Примеры данных работ можно найти в разделах <strong>Декор</strong> и <strong>Украшения</strong>.
+            Примеры данных работ можно найти в разделе <strong>Галерея</strong>.
         </ul>
     </section>
     <section class="main-sect">
-        <p class="main-sect__paragraph"> Также у нас представлены и некоторые готовые работы, еще не нашедшие себе
-            хозяев. </p>
-        <div class="section-gallery">
-            <div class="section-item">
-                <img class="main-sect__img" src="../resources/item1.jpg" alt="Изображение гребешка &quot;Лазурь&quot;">
-                <span class="section-item__name"> <del>Гребешок "Лазурь"</del>
-                (Выкуплен)
-                 </span>
-            </div>
-            <div class="section-item">
-                <img class="main-sect__img" src="../resources/item2.jpg"
-                     alt="Изображение чашки с искусственными суккулентами">
-                <span class="section-item__name"> Зеленая чашка </span>
-            </div>
-            <div class="section-item">
-                <img class="main-sect__img" src="../resources/item3.jpg" alt="Изображение броши &quot;Звездочка&quot;">
-                <span class="section-item__name"><ins>Брошь "Звездочка"</ins></span>
-            </div>
+        <div class="orders-table">
+            <div class="orders-table__name">Мастера</div>
+            <div class="orders-table__master">Мария</div>
+            <div class="orders-table__master">Сергей</div>
+            <div class="orders-table__master">Дарья и Андрей</div>
+            <div class="orders-table__master">Михаил</div>
+            <div class="orders-table__name">Сфера работы</div>
+            <div class="orders-table__element">Полимерная глина</div>
+            <div class="orders-table__element">Лазерный станок</div>
+            <div class="orders-table__element">Эпоксидная смола</div>
+            <div class="orders-table__element">Украшения из серебра</div>
+            <div class="orders-table__name">Контакты</div>
+            <div class="orders-table__contacts">maria@succulentsbox.ru</div>
+            <div class="orders-table__contacts">sergey@succulentsbox.ru</div>
+            <div class="orders-table__contacts">darya_andrey@succulentsbox.ru</div>
+            <div class="orders-table__contacts">michael@succulentsbox.ru</div>
         </div>
     </section>
     <section class="main-sect">
@@ -99,8 +98,6 @@
             </pre>
     Наша почта: lll@info.ru <br>
     <time datetime="2021-10-25">2021</time>
-    <script src="../lab4/LoadTimeScript.js"></script>
-    <p id="timer"></p>
 </footer>
 
 </body>

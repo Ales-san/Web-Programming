@@ -6,30 +6,28 @@
     <meta name="description"
           content="Мастерская &quot;Суккуленты&quot; - мы представляем вам украшения ручной работы из серебра, полимерной глины и натуральных камней, а также различные декоративные элементы.">
     <title>Мастерская "Суккуленты"</title>
-    <link href="../lab4/flexstyle.css" rel="stylesheet">
-    <!--script src="../lab4/animatedAside.js"></script-->
+    <link href="flexstyle.css" rel="stylesheet">
+
 </head>
 <body>
-
 <header class="header">
-
     <div class="header-container">
         <img class="header__logo" alt="icon" src="../resources/icon2.png">
         <h1 class="main-header">
-            Мастерская "Суккуленты"
+            <a class="main-header__ref" href="../index.html"> Мастерская "Суккуленты" </a>
         </h1>
-        <aside class="aside" id="stock">
+        <aside class="aside">
             Розыгрыш фигурки за лучший чертеж в<code> Autocad </code>! Подробная информация здесь: www.foo.bar
         </aside>
     </div>
     <nav class="header__navigation">
-        <a href="../lab4/orders.html" class="navigation__button" id="orders">Заказы</a>
-        <a href="../lab4/contacts.html" class="navigation__button" id="contacts">Контакты</a>
-        <a href="../lab4/ornamentation.html" class="navigation__button" id="ornamentation">Украшения</a>
-        <a href="../lab4/decor.html" class="navigation__button" id="decor">Декор</a>
+        <a href="orders.html" class="navigation__button" id="orders">Заказы</a>
+        <a href="contacts.html" class="navigation__button" id="contacts">Контакты</a>
+        <a href="ornamentation.html" class="navigation__button" id="ornamentation">Украшения</a>
+        <a href="decor.html" class="navigation__button" id="decor">Декор</a>
     </nav>
 </header>
-
+<script src="activeNavigationSection.js"> </script>
 <main class="main-content">
     <section class="main-sect">
         <h2 class="main-sect__header">
@@ -48,42 +46,39 @@
     </section>
     <section class="main-sect">
         <p class="main-sect__paragraph"> Также у нас представлены и некоторые готовые работы, еще не нашедшие себе
-            хозяев. </p>
+            хозяев.  </p>
         <div class="section-gallery">
             <div class="section-item">
-                <img class="main-sect__img" src="../resources/item1.jpg" alt="Изображение гребешка &quot;Лазурь&quot;">
-                <span class="section-item__name"> <del>Гребешок "Лазурь"</del>
-                (Выкуплен)
-                 </span>
+                <img class="main-sect__img" src="../resources/ornam1.jpg" alt="Изображение кольца">
+                <span class="section-item__name"> Кольцо " Зимний лес"
+                </span>
             </div>
             <div class="section-item">
-                <img class="main-sect__img" src="../resources/item2.jpg"
-                     alt="Изображение чашки с искусственными суккулентами">
-                <span class="section-item__name"> Зеленая чашка </span>
+                <img class="main-sect__img" src="../resources/ornam2.jpg"
+                     alt="Изображение комплекта из кулона и сережек">
+                <span class="section-item__name"> Комплект " Буря" </span>
             </div>
             <div class="section-item">
-                <img class="main-sect__img" src="../resources/item3.jpg" alt="Изображение броши &quot;Звездочка&quot;">
-                <span class="section-item__name"><ins>Брошь "Звездочка"</ins></span>
+                <img class="main-sect__img" src="../resources/ornam3.jpg" alt="Изображение колье из серебряных перьев">
+                <span class="section-item__name">Колье " Перья"</span>
             </div>
         </div>
-    </section>
-    <section class="main-sect">
-        <p class="main-sect__paragraph"><strong> Подробную информацию о сотрудничестве можно получить при консультации
-            по следующему номеру: +7 XXX-XXX-XX-XX. </strong></p>
+        <p class="main-sect__paragraph">Данные работы выполнены прекрасным тандемов мастеров Марии и Сергея</p>
     </section>
 
     <article class="article">
-        <h2 class="article__header"> История создания мастерской. </h2>
-        <p class="article__paragraph"> Наша мастерская была создана в 2021 году, и состояла на тот момент всего из <em>двух</em>
-            человек.
-            Но на текущий момент у нас работает уже целая команда мастеров, благодаря чему мы способны предоставить
+        <h2 class="article__header"> Авторы работ. </h2>
+        <p class="article__paragraph"> На текущий момент в нашей мастерской работает уже целая команда мастеров, благодаря чему мы способны предоставить
             каждому возможность получить свой заказ в кратчайшие сроки. </p>
-        <p class="article__paragraph"> Представляем вам нашу команду: <br>
-            <i>Мария</i> - мастер по работе с полимерной глиной. <br>
-            <i>Сергей</i> - мастер по работе с лазерным станком.<br>
+        <p class="article__paragraph">
+            Все украшения нашей мастерской выходят из под рук лучших друзей: <br>
             <i>Дарья и Андрей</i> - главные в изготовлении изделий из эпоксидной смолы.<br>
             А <i>Михаил</i> - профессиональный ювелир, чьи работы из серебра представлены в галерее.<br>
-            Именно поэтому в нашей команде шутят, что формула успеха - это <q>команда + время = успех<sup>2</sup></q>
+            Кольцо и комплект выполнены Дарьей и Андреем:
+            они прекрасно чувствуют структуру материалов и придают им форму, подчеркивающую их особенности.
+            Изумительный сплав материалов, который превращает обычные украшения в нечто большее. <br>
+            А колье " Перья", выполненное Михаилом, кажется особенно хрупким и воздушным, но это обманчивое впечатление,
+            и это украшение может быть прочнее, чем славящиеся своей стойкостью украшения из эпоксидной смолы.
         </p>
     </article>
 </main>
@@ -99,8 +94,6 @@
             </pre>
     Наша почта: lll@info.ru <br>
     <time datetime="2021-10-25">2021</time>
-    <script src="../lab4/LoadTimeScript.js"></script>
-    <p id="timer"></p>
 </footer>
 
 </body>
