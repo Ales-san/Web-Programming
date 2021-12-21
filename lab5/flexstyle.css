@@ -238,3 +238,69 @@ body {
     text-align: left;
     max-width: 140px;
 }
+
+.todo-list {
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    background-color: #DEEDCE;
+}
+
+.todo-list__header {
+    display: inline-block;
+    padding: 5px;
+    background-color: #DEEDCE;
+}
+
+.todo-list__body {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.todo-list__item {
+    position: relative;
+    margin: 5px;
+    padding: 5px;
+    background-color: #fdffd4;
+    width: 50%;
+    height: 40px;
+
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.todo-list__item.done {
+    text-decoration: line-through;
+}
+
+.todo-list__item:hover {
+    background-color: #DEEDE1;
+}
+
+.todo-list__del {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+
+    padding: 5px;
+    border: 1px solid;
+    text-decoration: none;
+    margin: 0 0 0 150px;
+}
+
+.todo-list__del.done {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid;
+    text-decoration: none;
+}
+
+.todo-list__del:hover {
+    padding: 5px;
+    border: 1px solid;
+    background-color: #efff8d;
+}
