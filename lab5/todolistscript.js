@@ -4,8 +4,7 @@ class TODO_List {
         this.list = task_list;
     }
 
-    add() {
-        let userTask = document.getElementById('todo-list__task').value;
+    addFromStorage(userTask, userDone) {
         if (userTask === "") {
             alert("No any task found!");
         } else {
@@ -13,11 +12,19 @@ class TODO_List {
             tasks.push({
                 num : size,
                 task : userTask,
-                done : false
+                done : userDone
             });
             size++;
-            this.display();
+
         }
+    }
+
+    add() {
+        let userTask = document.getElementById('todo-list__task').value;
+        this.addFromStorage(userTask, false);
+        this.display();
+        localStorage.setItem(userTask, 'false');
+
     }
 
     display() {
@@ -54,13 +61,16 @@ class TODO_List {
     done(key) {
         let index = tasks.findIndex((item) => item.num === key);
         tasks[index].done = (tasks[index].done === false);
+        localStorage.setItem(tasks[index].task, String(tasks[index].done));
         this.display();
     }
 
     delete(key) {
         let index = tasks.findIndex((item) => item.num === key);
+        localStorage.removeItem(tasks[index].task);
         tasks.splice(index, 1);
         this.display();
+
     }
 }
 
@@ -70,6 +80,14 @@ var size = 0;
 
 document.addEventListener('DOMContentLoaded', () => {
     todo_list = new TODO_List(document.getElementById('todo-list__body'));
+    for (let key of Object.keys(localStorage)) {
+        if (key !== "") {
+            todo_list.addFromStorage(key, localStorage.getItem(key) === "true");
+        } else {
+            localStorage.removeItem(key);
+        }
+    }
+    todo_list.display();
 });
 
 function onsubmitlist() {

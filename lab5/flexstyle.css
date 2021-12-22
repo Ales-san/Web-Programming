@@ -137,12 +137,12 @@ body {
     background: linear-gradient(#efff8d, snow, #efff8d) 0 0;
     /*background-color: #f4f8f2;*/
     border: 3px solid #005C11;
-    animation: aside_background 1s infinite;
+    animation: aside_background 3s infinite;
 }
 
 @keyframes aside_background {
     100% {
-        background-position: 0 200px;
+        background-position: 0 100px;
     }
 }
 
