@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="мастерская суккуленты ручная работа hand-made украшения декор заказ todo list">
+    <meta name="description"
+          content="Мастерская &quot;Суккуленты&quot; - мы представляем вам украшения ручной работы из серебра, полимерной глины и натуральных камней, а также различные декоративные элементы.">
+    <title>Мастерская "Суккуленты"</title>
+    <link href="flexstyle.css" rel="stylesheet">
+
+</head>
+<body>
+<header class="header">
+    <div class="header-container">
+        <img class="header__logo" alt="icon" src="../resources/icon2.png">
+        <h1 class="main-header">
+            <a class="main-header__ref" href="../index.html"> Мастерская "Суккуленты" </a>
+        </h1>
+        <aside class="aside">
+            Розыгрыш фигурки за лучший чертеж в<code> Autocad </code>! Подробная информация здесь: www.foo.bar
+        </aside>
+    </div>
+    <nav class="header__navigation">
+        <a href="orders.html" class="navigation__button" id="orders">Заказы</a>
+        <a href="contacts.html" class="navigation__button" id="contacts">Контакты</a>
+        <a href="ornamentation.html" class="navigation__button" id="ornamentation">Украшения</a>
+        <a href="decor.html" class="navigation__button" id="decor">Декор</a>
+        <a href="todolist.html" class="navigation__button" id="todolist">Список дел</a>
+    </nav>
+</header>
+<script src="activeNavigationSection.js"> </script>
+<script src="../lab6/todolistscript.js"></script>
+<main class="main-content">
+    <section class="main-sect">
+        <h2 class="main-sect__header">
+            To Do List
+        </h2>
+        <p class="main-sect__paragraph"><b>Наша мастерская "Суккуленты"</b> занимается изготовлением украшений и
+            декоративных элементов на заказ. Поэтому мы как никто знаем о том, как важно ничего не забыть.
+        Для этого многие работники нашей мастерской пользуются представленным на сайте интерактивным списком дел с функцией локального сохранения данных.</p>
+        <div class="todo-list">
+            <form id="todo-list" class="todo-list__header" onsubmit="return onsubmitlist();">
+                <span >
+                    <label for="todo-list__task">Введите задание: </label>
+                    <input type="text" class="todo-list__task" id="todo-list__task" name="user_task" placeholder="Покормить кота">
+                    <input type="submit" class="todo-list__add-button" id="todo-list__add-button" value="Добавить">
+                </span>
+            </form>
+            <div class="todo-list__body" id="todo-list__body">
+                Нужно сделать:
+                <span class="todo-list__item">Покормить кота</span>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <pre class="footer-sect__logo-name">
+ _____                      _            _
+/  ___|                    | |          | |
+\ `--. _   _  ___ ___ _   _| | ___ _ __ | |_ ___
+ `--. \ | | |/ __/ __| | | | |/ _ \ '_ \| __/ __|
+/\__/ / |_| | (_| (__| |_| | |  __/ | | | |_\__ \
+\____/ \__,_|\___\___|\__,_|_|\___|_| |_|\__|___/
+
+            </pre>
+    Наша почта: lll@info.ru <br>
+    <time datetime="2021-10-25">2021</time>
+</footer>
+
+</body>
+</html>
